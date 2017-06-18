@@ -1,0 +1,7 @@
+C:\tfs\codae\codae.backend.interfaces\bin\Debug\netcoreapp1.1\codae.backend.interfaces.deps.json
+C:\tfs\codae\codae.backend.interfaces\bin\Debug\netcoreapp1.1\codae.backend.interfaces.dll
+C:\tfs\codae\codae.backend.interfaces\bin\Debug\netcoreapp1.1\codae.backend.interfaces.pdb
+C:\tfs\codae\codae.backend.interfaces\obj\Debug\netcoreapp1.1\codae.backend.interfaces.csprojResolveAssemblyReference.cache
+C:\tfs\codae\codae.backend.interfaces\obj\Debug\netcoreapp1.1\codae.backend.interfaces.AssemblyInfo.cs
+C:\tfs\codae\codae.backend.interfaces\obj\Debug\netcoreapp1.1\codae.backend.interfaces.dll
+C:\tfs\codae\codae.backend.interfaces\obj\Debug\netcoreapp1.1\codae.backend.interfaces.pdb

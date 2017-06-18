@@ -1,0 +1,7 @@
+C:\tfs\codae\codae.backend.core\bin\Debug\netcoreapp1.1\codae.backend.core.deps.json
+C:\tfs\codae\codae.backend.core\bin\Debug\netcoreapp1.1\codae.backend.core.dll
+C:\tfs\codae\codae.backend.core\obj\Debug\netcoreapp1.1\codae.backend.core.csprojResolveAssemblyReference.cache
+C:\tfs\codae\codae.backend.core\obj\Debug\netcoreapp1.1\codae.backend.core.AssemblyInfo.cs
+C:\tfs\codae\codae.backend.core\bin\Debug\netcoreapp1.1\codae.backend.core.pdb
+C:\tfs\codae\codae.backend.core\obj\Debug\netcoreapp1.1\codae.backend.core.dll
+C:\tfs\codae\codae.backend.core\obj\Debug\netcoreapp1.1\codae.backend.core.pdb
