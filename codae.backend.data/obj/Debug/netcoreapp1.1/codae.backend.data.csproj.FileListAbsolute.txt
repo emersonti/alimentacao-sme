@@ -9,3 +9,4 @@ C:\tfs\codae\codae.backend.data\bin\Debug\netcoreapp1.1\codae.backend.data.pdb
 C:\tfs\codae\codae.backend.data\bin\Debug\netcoreapp1.1\codae.backend.interfaces.pdb
 C:\tfs\codae\codae.backend.data\obj\Debug\netcoreapp1.1\codae.backend.data.dll
 C:\tfs\codae\codae.backend.data\obj\Debug\netcoreapp1.1\codae.backend.data.pdb
+C:\tfs\codae\codae.backend.data\bin\Debug\netcoreapp1.1\appsettings.json

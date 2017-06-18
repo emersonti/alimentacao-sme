@@ -1,4 +1,6 @@
-﻿namespace codae.backend.core.Models
+﻿using System;
+
+namespace codae.backend.core.Models
 {
     /// <summary>
     /// Domínio para os Tipos de Gestão
@@ -24,5 +26,13 @@
         /// Nome do Tipo de Gestão
         /// </summary>
         public string Nome { get; private set; }
+
+        public static TipoGestao Create(TipoGestaoEnum tipoGestaoId, string nome) =>
+            new TipoGestao()
+            {
+                TipoGestaoId = tipoGestaoId,
+                Nome = nome
+            };
+        
     }
 }

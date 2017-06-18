@@ -23,6 +23,8 @@ namespace codae.backend.data.Mappings
                 .HasForeignKey(i => i.PratoId)
                 .IsRequired();
 
+            builder.HasKey(i => new { i.CardapioId, i.ServicoId, i.PratoId, i.Data });
+
             builder.ToTable("ItensCardapio");
         }
     }

@@ -1,4 +1,6 @@
-﻿namespace codae.backend.core.Models
+﻿using System;
+
+namespace codae.backend.core.Models
 {
     /// <summary>
     /// Domínio para os tipos de Unidade Escolar
@@ -26,5 +28,12 @@
         /// Nome do Tipo de Unidade Escolar
         /// </summary>
         public string Nome { get; private set; }
+
+        public static TipoUnidadeEscolar Create(TipoUnidadeEscolarEnum tipoUnidadeEscolarId, string nome) =>
+            new TipoUnidadeEscolar()
+            {
+                TipoUnidadeEscolarId = tipoUnidadeEscolarId,
+                Nome = nome
+            };
     }
 }
