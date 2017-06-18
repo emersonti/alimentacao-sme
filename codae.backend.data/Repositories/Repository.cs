@@ -24,17 +24,17 @@ namespace codae.backend.data.Repositories
             _dbSet.Add(entity);
         }
 
-        public IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
+        public virtual IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
         {
             return _dbSet.AsNoTracking().Where(predicate).ToList();
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public virtual IEnumerable<TEntity> GetAll()
         {
                 return _dbSet.ToList();
         }
 
-        public TEntity GetByKey(object key)
+        public virtual TEntity GetByKey(object key)
         {
                 return _dbSet.Find(key);
         }

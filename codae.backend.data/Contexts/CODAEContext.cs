@@ -9,7 +9,11 @@ using codae.backend.core.Models;
 namespace codae.backend.data.Contexts
 {
     public class CODAEContext: DbContext
-    {        
+    {
+        public CODAEContext(): base() { }
+
+        public CODAEContext(DbContextOptions options): base(options) { }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
@@ -67,6 +71,7 @@ namespace codae.backend.data.Contexts
             }
         }
 
+        /*
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var config = new ConfigurationBuilder()
@@ -78,6 +83,6 @@ namespace codae.backend.data.Contexts
             optionsBuilder
                 .UseSqlServer(config.GetConnectionString("DefaultConnection"), 
                 opt => opt.EnableRetryOnFailure());            
-        }
+        }*/
     }
 }

@@ -27,13 +27,14 @@
 
         protected Prato() { }
 
-        public static Prato Create(string nome) => Create(nome, null);
+        public static Prato Create(string nome) => Create(null, nome);
 
-        public static Prato Create(string nome, int? grupoPratoId) =>
+        public static Prato Create(Prato grupoPrato, string nome) =>
             new Prato()
             {
                 Nome = nome,
-                GrupoPratoId = grupoPratoId
+                GrupoPratoId = grupoPrato == null ? 0: grupoPrato.PratoId,
+                GrupoPrato = grupoPrato
             };
     }
 }

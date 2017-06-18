@@ -10,9 +10,11 @@ namespace codae.backend.tests.Core
         public void Deve_criar_servico_com_dois_componentes()
         {
             var servico = CreateServico();
+            var prato1 = Prato.Create("Aroz");
+            var prato2 = Prato.Create("Feijão");
 
-            servico.AdicionarComponente(1, "Arroz");
-            servico.AdicionarComponente(2, "Feijão");
+            servico.AdicionarComponente(prato1);
+            servico.AdicionarComponente(prato2);
 
             Assert.Equal(2, servico.Composicao.Count());
         }
@@ -21,9 +23,10 @@ namespace codae.backend.tests.Core
         public void Adicionar_componentes_repetidos_nao_alteram_contagem()
         {
             var servico = CreateServico();
+            var prato = Prato.Create("Arroz");
 
-            servico.AdicionarComponente(1, "Arroz");
-            servico.AdicionarComponente(1, "Arroz");
+            servico.AdicionarComponente(prato);
+            servico.AdicionarComponente(prato);
 
             Assert.Equal(1, servico.Composicao.Count());
         }
