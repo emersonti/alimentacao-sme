@@ -13,7 +13,7 @@ namespace codae.backend.application.Services
         private readonly IMapper _mapper;
         private readonly IRegiaoRepository _regiaoRepository;
 
-        public RegiaoService(RegiaoRepository regiaoRepository, IMapper mapper)
+        public RegiaoService(IRegiaoRepository regiaoRepository, IMapper mapper)
         {
             _regiaoRepository = regiaoRepository;
             _mapper = mapper;

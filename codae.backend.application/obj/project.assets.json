@@ -9275,6 +9275,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
       "AutoMapper >= 6.1.0",
+      "Microsoft.EntityFrameworkCore.SQLServer >= 1.1.2",
       "Microsoft.NETCore.App >= 1.1.2",
       "codae.backend.core >= 1.0.0",
       "codae.backend.data >= 1.0.0",
@@ -9318,6 +9319,10 @@
             "target": "Package",
             "version": "1.1.2",
             "autoReferenced": true
+          },
+          "Microsoft.EntityFrameworkCore.SQLServer": {
+            "target": "Package",
+            "version": "1.1.2"
           },
           "AutoMapper": {
             "target": "Package",

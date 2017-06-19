@@ -3,7 +3,7 @@ using codae.backend.data.Contexts;
 
 namespace codae.backend.data.Repositories
 {
-    public class PratoRepository : Repository<Prato>
+    public class PratoRepository : Repository<Prato>, IPratoRepository
     {
         public PratoRepository(CODAEContext context) : base(context) { }
     }

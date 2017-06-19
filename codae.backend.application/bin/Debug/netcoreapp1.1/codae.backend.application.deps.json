@@ -9,6 +9,7 @@
       "codae.backend.application/1.0.0": {
         "dependencies": {
           "AutoMapper": "6.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.2",
           "codae.backend.core": "1.0.0",
           "codae.backend.data": "1.0.0",
           "codae.backend.interfaces": "1.0.0"

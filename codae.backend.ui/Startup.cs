@@ -1,8 +1,14 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using codae.backend.data.Contexts;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using codae.backend.application.Services;
+using codae.backend.data.Repositories;
+using AutoMapper;
+using codae.backend.application.AutoMapper;
 
 namespace codae.backend.ui
 {
@@ -23,6 +29,27 @@ namespace codae.backend.ui
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Add database
+            services.AddDbContext<CODAEContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
+                opt => opt.EnableRetryOnFailure());
+            });
+
+
+            // Register Repositories
+            services.AddTransient<IRegiaoRepository, RegiaoRepository>();
+            services.AddTransient<IServicoRepository, ServicoRepository>();
+            services.AddTransient<IPratoRepository, PratoRepository>();
+            services.AddTransient<ICardapioRepository, CardapioRepository>();
+
+            // Register Application Services
+            services.AddTransient<IRegiaoService, RegiaoService>();
+            services.AddTransient<IServicoService, ServicoService>();            
+
+            // Add AutoMapper mappings
+            services.AddSingleton<IMapper>(c => new Mapper(AutoMapperConfiguration.RegisterMappings()));
+
             // Add framework services.
             services.AddMvc();
         }
@@ -33,7 +60,22 @@ namespace codae.backend.ui
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.UseMvc();
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+                //app.UseDatabaseErrorPage();
+                app.UseBrowserLink();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+            }
+
+            app.UseStaticFiles();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");                
+            });
         }
     }
 }
