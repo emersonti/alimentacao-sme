@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codae.backend.tests", "coda
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codae.backend.ui", "codae.backend.ui\codae.backend.ui.csproj", "{4CF21FE8-97D6-4E93-9CBA-E1AFECAEE000}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codae.backend.application", "codae.backend.application\codae.backend.application.csproj", "{09C77189-5B76-41B9-9F0B-66DEF0374FDC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{4CF21FE8-97D6-4E93-9CBA-E1AFECAEE000}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CF21FE8-97D6-4E93-9CBA-E1AFECAEE000}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CF21FE8-97D6-4E93-9CBA-E1AFECAEE000}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C77189-5B76-41B9-9F0B-66DEF0374FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C77189-5B76-41B9-9F0B-66DEF0374FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C77189-5B76-41B9-9F0B-66DEF0374FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C77189-5B76-41B9-9F0B-66DEF0374FDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

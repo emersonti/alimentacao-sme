@@ -1,0 +1,14 @@
+C:\tfs\codae\codae.backend.application\bin\Debug\netcoreapp1.1\appsettings.json
+C:\tfs\codae\codae.backend.application\bin\Debug\netcoreapp1.1\codae.backend.application.deps.json
+C:\tfs\codae\codae.backend.application\bin\Debug\netcoreapp1.1\codae.backend.application.dll
+C:\tfs\codae\codae.backend.application\bin\Debug\netcoreapp1.1\codae.backend.core.dll
+C:\tfs\codae\codae.backend.application\bin\Debug\netcoreapp1.1\codae.backend.data.dll
+C:\tfs\codae\codae.backend.application\bin\Debug\netcoreapp1.1\codae.backend.interfaces.dll
+C:\tfs\codae\codae.backend.application\bin\Debug\netcoreapp1.1\codae.backend.core.pdb
+C:\tfs\codae\codae.backend.application\bin\Debug\netcoreapp1.1\codae.backend.data.pdb
+C:\tfs\codae\codae.backend.application\bin\Debug\netcoreapp1.1\codae.backend.interfaces.pdb
+C:\tfs\codae\codae.backend.application\obj\Debug\netcoreapp1.1\codae.backend.application.csprojResolveAssemblyReference.cache
+C:\tfs\codae\codae.backend.application\obj\Debug\netcoreapp1.1\codae.backend.application.AssemblyInfo.cs
+C:\tfs\codae\codae.backend.application\bin\Debug\netcoreapp1.1\codae.backend.application.pdb
+C:\tfs\codae\codae.backend.application\obj\Debug\netcoreapp1.1\codae.backend.application.dll
+C:\tfs\codae\codae.backend.application\obj\Debug\netcoreapp1.1\codae.backend.application.pdb

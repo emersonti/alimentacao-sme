@@ -19,3 +19,5 @@ C:\tfs\codae\codae.backend.tests\obj\Debug\netcoreapp1.1\codae.backend.tests.pdb
 C:\tfs\codae\codae.backend.tests\bin\Debug\netcoreapp1.1\codae.backend.ui.dll
 C:\tfs\codae\codae.backend.tests\bin\Debug\netcoreapp1.1\codae.backend.ui.pdb
 C:\tfs\codae\codae.backend.tests\bin\Debug\netcoreapp1.1\appsettings.json
+C:\tfs\codae\codae.backend.tests\bin\Debug\netcoreapp1.1\codae.backend.application.dll
+C:\tfs\codae\codae.backend.tests\bin\Debug\netcoreapp1.1\codae.backend.application.pdb

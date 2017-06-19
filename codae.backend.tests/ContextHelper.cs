@@ -1,4 +1,7 @@
-﻿using codae.backend.data.Contexts;
+﻿using AutoMapper;
+using codae.backend.application.AutoMapper;
+using codae.backend.application.Services;
+using codae.backend.data.Contexts;
 using codae.backend.data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,6 +9,9 @@ namespace codae.backend.tests
 {
     public static class ContextHelper
     {
+        public static IMapper Mapper =>
+            new Mapper(AutoMapperConfiguration.RegisterMappings());
+
         public static CODAEContext CreateContext()
         {
             var builder = new DbContextOptionsBuilder();
@@ -33,5 +39,11 @@ namespace codae.backend.tests
 
         public static UnidadeEscolarRepository CreateUnidadeEscolarRepository(CODAEContext context) =>
             new UnidadeEscolarRepository(context);
+
+        public static IServicoService CreateServicoService(CODAEContext context) =>
+            new ServicoService(CreateServicoRepository(context), Mapper);
+
+        public static IRegiaoService CreateRegiaoService(CODAEContext context) =>
+            new RegiaoService(CreateRegiaoRepository(context), Mapper);
     }
 }

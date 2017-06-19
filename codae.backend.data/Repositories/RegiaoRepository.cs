@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace codae.backend.data.Repositories
 {
-    public class RegiaoRepository: Repository<Regiao>
+    public class RegiaoRepository: Repository<Regiao>, IRegiaoRepository
     {
         public RegiaoRepository(CODAEContext context): base(context)  {}
 

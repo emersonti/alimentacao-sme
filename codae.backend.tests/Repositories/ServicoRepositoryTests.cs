@@ -29,7 +29,7 @@ namespace codae.backend.tests.Repositories
 
             repository.SaveChanges();
 
-            var existing = repository.GetByKey(1);
+            var existing = repository.GetByKey(servico.ServicoId);
             Assert.Equal(2, existing.Composicao.Count());
         }
     }

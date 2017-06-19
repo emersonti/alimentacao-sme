@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\codae.backend.core\codae.backend.core.csproj" />
+    <ProjectReference Include="..\codae.backend.data\codae.backend.data.csproj" />
+    <ProjectReference Include="..\codae.backend.interfaces\codae.backend.interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
