@@ -6,6 +6,7 @@ namespace codae.backend.application.ViewModels
     public class GrupoPratoViewModel
     {
         [Key]
+        [Display(AutoGenerateField = false)]
         public int PratoId { get; set; }
 
         [Required(ErrorMessage = "Por favor informe o nome do Grupo de Pratos")]

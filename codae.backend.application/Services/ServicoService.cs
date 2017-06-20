@@ -19,6 +19,14 @@ namespace codae.backend.application.Services
             _mapper = mapper;
         }
 
+        public void CreateItemServico(int servicoId, int planoId, string nome)
+        {
+            var servico = _servicoRepository.GetByKey(servicoId);
+
+            servico.AdicionarComponente(planoId, nome);
+
+        }
+
         public int CreateServico(ServicoViewModel servico)
         {
             var newServico = _mapper.Map<Servico>(servico);

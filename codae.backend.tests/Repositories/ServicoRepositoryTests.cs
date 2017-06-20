@@ -17,8 +17,8 @@ namespace codae.backend.tests.Repositories
             var prato1 = Prato.Create("Leite");
             var prato2 = Prato.Create("Pão com manteiga");
 
-            servico.AdicionarComponente(prato1);
-            servico.AdicionarComponente(prato2);
+            servico.AdicionarComponente(prato1.PratoId, prato1.Nome);
+            servico.AdicionarComponente(prato2.PratoId, prato2.Nome);
 
             var pratoRepository = ContextHelper.CreatePratoRepository(context);
             var repository = ContextHelper.CreateServicoRepository(context);

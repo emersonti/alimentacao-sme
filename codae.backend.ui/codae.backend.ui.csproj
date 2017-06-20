@@ -6,8 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Views\Prato\" />
     <Folder Include="Views\Servico\" />
     <Folder Include="Views\Regiao\" />
+    <Folder Include="Views\Shared\Components\ComposicaoServico\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>

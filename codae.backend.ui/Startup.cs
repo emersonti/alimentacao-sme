@@ -45,7 +45,8 @@ namespace codae.backend.ui
 
             // Register Application Services
             services.AddTransient<IRegiaoService, RegiaoService>();
-            services.AddTransient<IServicoService, ServicoService>();            
+            services.AddTransient<IServicoService, ServicoService>();
+            services.AddTransient<IPratoService, PratoService>();                            
 
             // Add AutoMapper mappings
             services.AddSingleton<IMapper>(c => new Mapper(AutoMapperConfiguration.RegisterMappings()));

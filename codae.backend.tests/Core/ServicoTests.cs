@@ -13,8 +13,8 @@ namespace codae.backend.tests.Core
             var prato1 = Prato.Create("Aroz");
             var prato2 = Prato.Create("Feijão");
 
-            servico.AdicionarComponente(prato1);
-            servico.AdicionarComponente(prato2);
+            servico.AdicionarComponente(prato1.PratoId, prato1.Nome);
+            servico.AdicionarComponente(prato2.PratoId, prato2.Nome);
 
             Assert.Equal(2, servico.Composicao.Count());
         }
@@ -25,8 +25,8 @@ namespace codae.backend.tests.Core
             var servico = CreateServico();
             var prato = Prato.Create("Arroz");
 
-            servico.AdicionarComponente(prato);
-            servico.AdicionarComponente(prato);
+            servico.AdicionarComponente(prato.PratoId, prato.Nome);
+            servico.AdicionarComponente(prato.PratoId, prato.Nome);
 
             Assert.Equal(1, servico.Composicao.Count());
         }

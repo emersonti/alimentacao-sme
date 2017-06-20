@@ -6,6 +6,7 @@ namespace codae.backend.application.ViewModels
     public class ServicoViewModel
     {
         [Key]
+        [Display(AutoGenerateField = false)]
         public int ServicoId { get; set; }
 
         [Required(ErrorMessage = "Por favor informe o Nome do Serviço")]
@@ -13,6 +14,6 @@ namespace codae.backend.application.ViewModels
         [MaxLength(100)]
         public string Nome { get; set; }
 
-        public List<ItemServicoViewModel> ItensServico { get; } = new List<ItemServicoViewModel>();
+        public ComposicaoServicoViewModel Composicao { get; set; }
     }
 }

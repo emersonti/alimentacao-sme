@@ -14,7 +14,7 @@ namespace codae.backend.tests.Services
             var regiao = new RegiaoViewModel()
             {
                 Nome = "Ipiranga",
-                AgrupamentoId = core.Models.AgrupamentoEnum.Agrupamento1
+                AgrupamentoId = Agrupamentos.Agrupamento1
             };
 
             var id = service.CreateRegiao(regiao);

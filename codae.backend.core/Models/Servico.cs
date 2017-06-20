@@ -25,15 +25,12 @@ namespace codae.backend.core.Models
         private readonly List<ItemServico> _composicao = new List<ItemServico>();
         public IEnumerable<ItemServico> Composicao => _composicao.ToList();
 
-        public void AdicionarComponente(Prato grupoPrato, string nome = null)
-        {
-            if (string.IsNullOrWhiteSpace(nome))
-                nome = grupoPrato.Nome;
-
+        public void AdicionarComponente(int grupoPratoId, string nome = null)
+        {            
             if (_composicao.Any(i => string.Compare(i.Nome, nome, StringComparison.OrdinalIgnoreCase) == 0))
                 return;
 
-            _composicao.Add(ItemServico.Create(this, grupoPrato, nome));
+            _composicao.Add(ItemServico.Create(this, grupoPratoId, nome));
         }
 
 

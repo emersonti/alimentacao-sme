@@ -21,6 +21,6 @@ namespace codae.backend.data.Repositories
         }
 
         public IEnumerable<ItemServico> GetItensServico(int servicoId) => 
-            _dbSet.Include(s => s.Composicao).SelectMany(s => s.Composicao).Where(c => c.ServicoId == servicoId);
+            _dbSet.Include(s => s.Composicao).SelectMany(s => s.Composicao).Where(c => c.ServicoId == servicoId);        
     }    
 }

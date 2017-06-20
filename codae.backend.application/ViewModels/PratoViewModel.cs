@@ -5,6 +5,7 @@ namespace codae.backend.application.ViewModels
     public class PratoViewModel
     {
         [Key]
+        [Display(AutoGenerateField = false)]
         public int PratoId { get; set; }
 
         [Required(ErrorMessage = "Por favor informe o Nom do Prato")]

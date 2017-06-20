@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "a7256e54d4f537b7ae4263649ead018cba489f56"
+    "signature": "80d7cbccdd07e4d24b8772d735a551ce2a53c015"
   },
   "compilationOptions": {},
   "targets": {
@@ -39,7 +39,7 @@
           "lib/netstandard1.5/Microsoft.ApplicationInsights.dll": {}
         }
       },
-      "microsoft.applicationinsights.aspnetcore/2.0.0": {
+      "microsoft.applicationinsights.aspnetcore/2.0.1": {
         "dependencies": {
           "Microsoft.ApplicationInsights": "2.2.0",
           "Microsoft.AspNetCore.Hosting": "1.1.2",
@@ -1386,6 +1386,7 @@
       "codae.backend.application/1.0.0": {
         "dependencies": {
           "AutoMapper": "6.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.2",
           "codae.backend.core": "1.0.0",
           "codae.backend.data": "1.0.0",
           "codae.backend.interfaces": "1.0.0"
@@ -1419,7 +1420,7 @@
       },
       "codae.backend.ui/1.0.0": {
         "dependencies": {
-          "Microsoft.ApplicationInsights.AspNetCore": "2.0.0",
+          "Microsoft.ApplicationInsights.AspNetCore": "2.0.1",
           "Microsoft.AspNetCore": "1.1.2",
           "Microsoft.AspNetCore.Mvc": "1.1.3",
           "Microsoft.AspNetCore.StaticFiles": "1.1.2",
@@ -1458,12 +1459,12 @@
       "path": "microsoft.applicationinsights/2.2.0",
       "hashPath": "microsoft.applicationinsights.2.2.0.nupkg.sha512"
     },
-    "microsoft.applicationinsights.aspnetcore/2.0.0": {
+    "microsoft.applicationinsights.aspnetcore/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LcbwEaO9oA063w5yzxLgkxZkFIF9VCYxG98E2XZ2Ua/Uj2I3WMhyRp/gE7HI9sUapYRT3WCyJ/LYXT69WYrKow==",
-      "path": "microsoft.applicationinsights.aspnetcore/2.0.0",
-      "hashPath": "microsoft.applicationinsights.aspnetcore.2.0.0.nupkg.sha512"
+      "sha512": "sha512-6XR356YN/o9RveaYPfZpgMEHVOM2PBS09h87lxRgupQ136Z82AviP8EvHOUjstnBizKQOjpzMkxAsGvTu4HZgg==",
+      "path": "microsoft.applicationinsights.aspnetcore/2.0.1",
+      "hashPath": "microsoft.applicationinsights.aspnetcore.2.0.1.nupkg.sha512"
     },
     "microsoft.aspnetcore/1.1.2": {
       "type": "package",

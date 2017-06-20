@@ -33,13 +33,12 @@
 
         protected ItemServico() { }
 
-        public static ItemServico Create(Servico servico, Prato grupoPrato, string nome) =>
+        public static ItemServico Create(Servico servico, int grupoPratoId, string nome) =>
             new ItemServico()
             {
                 ServicoId = servico != null ? servico.ServicoId: 0,
                 Servico = servico,
-                PratoId = grupoPrato != null ? grupoPrato.PratoId: 0,
-                Grupo = grupoPrato,
+                PratoId = grupoPratoId,                
                 Nome = nome
             };
     }

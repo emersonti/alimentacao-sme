@@ -1,0 +1,42 @@
+@using codae.backend.ui.Extensions;
+@model codae.backend.application.ViewModels.ComposicaoServicoViewModel
+
+<u>
+    @foreach (var item in Model.Componentes)
+    {
+        <li><span class="glyphicon-folder-close">@item.Nome</span></li>
+    }
+</u>    
+<form asp-controller="Servico" asp-action="CreateItem">
+    <div class="form-horizontal">
+        <h4>ItemServicoViewModel</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>                        
+        <input asp-for="ServicoId" type="hidden" />        
+                
+        <div class="form-group">
+            <label asp-for="PlanoId" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <select asp-for="PlanoId" asp-items="Model.GruposPrato .ToSelectList(g => g.Nome, g => g.PratoId)"></select>
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Nome" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button id="submitComponent" class="btn btn-default">Save?</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

@@ -1,11 +1,11 @@
-﻿using codae.backend.core.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace codae.backend.application.ViewModels
 {
     public class RegiaoViewModel
     {
-        [Key]
+        [Key]        
+        [Display(AutoGenerateField = false)]
         public int RegiaoId { get; set; }
 
         [Required(ErrorMessage = "Por favor informe o Nome da Região")]
@@ -15,7 +15,8 @@ namespace codae.backend.application.ViewModels
 
         [Required(ErrorMessage = "Por vaor informe um Agrupamento")]
         [Display(Name = "Agrupamento")]
-        public AgrupamentoEnum AgrupamentoId { get; set; }
+        [EnumDataType(typeof(Agrupamentos))]
+        public Agrupamentos AgrupamentoId { get; set; }
 
         [Required(ErrorMessage = "Por favor informe o nome do Dirigente")]
         [MinLength(5)]
