@@ -12,5 +12,6 @@ namespace codae.backend.application.Services
         IEnumerable<ServicoViewModel> GetAll();
         ServicoViewModel GetByKey(int servicoId);
         void CreateItemServico(int servicoId, int planoId, string nome);
+        IEnumerable<ItemServicoViewModel> GetItensServico(int servicoId);
     }
 }

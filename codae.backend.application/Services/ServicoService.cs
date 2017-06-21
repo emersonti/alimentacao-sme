@@ -25,6 +25,7 @@ namespace codae.backend.application.Services
 
             servico.AdicionarComponente(planoId, nome);
 
+            _servicoRepository.SaveChanges();
         }
 
         public int CreateServico(ServicoViewModel servico)
@@ -42,6 +43,9 @@ namespace codae.backend.application.Services
 
        public ServicoViewModel GetByKey(int servicoId) =>
             _mapper.Map<ServicoViewModel>(_servicoRepository.GetByKey(servicoId));
+
+        public IEnumerable<ItemServicoViewModel> GetItensServico(int servicoId) => 
+            _mapper.Map<IEnumerable<ItemServicoViewModel>>(_servicoRepository.GetItensServico(servicoId));
 
         public void RemoveServico(int servicoId) =>
             _servicoRepository.Remove(servicoId);

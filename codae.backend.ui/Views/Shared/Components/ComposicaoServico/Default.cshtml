@@ -7,7 +7,7 @@
         <li><span class="glyphicon-folder-close">@item.Nome</span></li>
     }
 </u>    
-<form asp-controller="Servico" asp-action="CreateItem">
+<form id="form-component">
     <div class="form-horizontal">
         <h4>ItemServicoViewModel</h4>
         <hr />
@@ -30,7 +30,7 @@
         </div>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <button id="submitComponent" class="btn btn-default">Save?</button>
+                <button type="button" id="submitComponent" class="btn btn-default">Save?</button>
             </div>
         </div>
     </div>

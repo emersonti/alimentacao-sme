@@ -74,13 +74,15 @@ namespace codae.backend.ui.Controllers
                 {
                     _servicoService.CreateItemServico(composicaoServicoVM.ServicoId,
                         composicaoServicoVM.PlanoId, composicaoServicoVM.Nome);
+                    composicaoServicoVM.Nome = "";
+                    composicaoServicoVM.Componentes = _servicoService.GetItensServico(composicaoServicoVM.ServicoId);
                 }
                 catch(Exception ex)
                 {
                     ModelState.AddModelError("", ex.Message);
                 }
             }
-            return RedirectToAction("Edit", new { id = composicaoServicoVM.ServicoId });
+            return ViewComponent("ComposicaoServico", composicaoServicoVM);
         }
     }
 }

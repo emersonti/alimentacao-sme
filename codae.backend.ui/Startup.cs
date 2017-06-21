@@ -65,7 +65,7 @@ namespace codae.backend.ui
             {
                 app.UseDeveloperExceptionPage();
                 //app.UseDatabaseErrorPage();
-                app.UseBrowserLink();
+                //app.UseBrowserLink();
             }
             else
             {
